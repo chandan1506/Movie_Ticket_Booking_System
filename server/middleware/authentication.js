@@ -3,7 +3,7 @@ require("dotenv").config()
 
 // middleware function
 const authenticate = (req,res,next)=>{
-    const token=req.headers.authorization
+    const token=req.headers?.authorization
     //   console.log(token)
     
     try {
@@ -12,10 +12,8 @@ const authenticate = (req,res,next)=>{
     }else{
         const decode = jwt.verify(token,process.env.key)
         if(decode){
-            console.log(decode.userId)
-            req.body.userID = decode.userId
-            
-        //    req.body.userRole = decode.userRole
+            // console.log(decode.userId)
+            req.body.userId = decode.userId
             next()
         }else{
             res.status(400).json("plz login again")

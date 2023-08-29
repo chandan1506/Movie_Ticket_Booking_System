@@ -7,10 +7,21 @@ app.use(express.json())
 require("dotenv").config()
 const Port = process.env.port
 
+// cors
+const cors = require("cors")
+app.use(cors())
 
 // routes
 const { userRouter}  = require("./routes/userRouter")
 app.use("/",userRouter)
+const { theaterRouter } = require("./routes/theaterRouter")
+app.use("/theaters",theaterRouter)
+// const { movieRouter } = require("./routes/movieRoutes")
+// app.use("/movie",authenticate,movieRouter)
+// const { tickeRouter } = require("./routes/ticketRoutes")
+// app.use("/bookings",authenticate,tickeRouter)
+// const { cartRouter } = require("./routes/cartRoutes")
+// app.use("/cart",authenticate,cartRouter)
 
 
 // Base API
