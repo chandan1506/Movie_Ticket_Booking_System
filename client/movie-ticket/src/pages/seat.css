@@ -1,0 +1,26 @@
+.seat{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    gap:10px;
+    margin-top: 1rem;
+}
+.seat div{
+    /* border: 1px solid red; */
+   
+    background-color:rgb(13, 101, 201);
+    padding:0.5rem
+
+}
+.add{
+    height: 40px;
+    width: 100px;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}

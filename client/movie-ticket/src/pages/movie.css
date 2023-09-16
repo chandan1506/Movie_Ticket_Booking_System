@@ -1,0 +1,29 @@
+.cart{
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.book{
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    color:white;
+    border-radius: 10px;
+    border: none;
+}
+.add{
+    height: 40px;
+    width: 100px;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+}
+
+.search{
+    margin-top: 50px;
+}
+.search input{
+    width: 70%;
+    border-radius: 20px;
+}

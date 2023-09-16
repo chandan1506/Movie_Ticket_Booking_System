@@ -1,0 +1,23 @@
+.home{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+   
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+.theaterCard{
+    /* border:1px solid red; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 20px;
+    
+}
+.theaterCard img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+
+}

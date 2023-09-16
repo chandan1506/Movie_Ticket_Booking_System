@@ -1,0 +1,38 @@
+form{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid red ; */
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 40px;
+}
+form input{
+    height: 30px;
+    /* border-radius: 5px; */
+    margin-top: 20px;
+}
+
+.login{
+    height: auto;
+    width: 30%;
+    border: 1px solid white;
+    margin: auto;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+#account{
+    height: 35px;
+    /* text-align: center; */
+    font-size: 1.1rem;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color:white;
+}
+#account:hover{
+    cursor: pointer;
+    background-color: rgb(95, 95, 206);
+}

@@ -1,0 +1,19 @@
+.del{
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.buy{
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    color:white;
+    border-radius: 10px;
+    border: none;
+
+}
