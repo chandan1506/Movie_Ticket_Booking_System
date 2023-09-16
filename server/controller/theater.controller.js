@@ -51,3 +51,6 @@ const searchTheater=async(req,res)=>{
 // exporting 
 module.exports={ addTheater, getTheater, getOneTheater, searchTheater }
 
+
+
+//64edd29ad53f9e616b6aa728

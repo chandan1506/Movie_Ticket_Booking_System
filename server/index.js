@@ -11,17 +11,21 @@ const Port = process.env.port
 const cors = require("cors")
 app.use(cors())
 
+//middleware
+const { authenticate } = require("./middleware/authentication")
+
 // routes
 const { userRouter}  = require("./routes/userRouter")
 app.use("/",userRouter)
 const { theaterRouter } = require("./routes/theaterRouter")
 app.use("/theaters",theaterRouter)
-// const { movieRouter } = require("./routes/movieRoutes")
-// app.use("/movie",authenticate,movieRouter)
-// const { tickeRouter } = require("./routes/ticketRoutes")
-// app.use("/bookings",authenticate,tickeRouter)
-// const { cartRouter } = require("./routes/cartRoutes")
-// app.use("/cart",authenticate,cartRouter)
+
+const { movieRouter } = require("./routes/movieRouter")
+app.use("/movie",authenticate,movieRouter)
+const { ticketRouter } = require("./routes/ticketRouter")
+app.use("/bookings",authenticate,ticketRouter)
+const { cartRouter } = require("./routes/cartRouter")
+app.use("/cart",authenticate,cartRouter)
 
 
 // Base API
